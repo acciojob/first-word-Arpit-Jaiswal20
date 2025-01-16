@@ -1,14 +1,12 @@
 function firstWord(s) {
-  // your code here
-	if (!str.trim()) return ''; 
+  // Check if the string is empty or contains only whitespace
+  if (!s.trim()) return '';
 
- 
-  const match = str.trim().match(/^\S+/);
-  return match ? match[0] : str.trim();
-
+  // Match the first word
+  const match = s.trim().match(/^\S+/);
+  return match ? match[0] : '';
 }
 
 // Do not change the code below
-
 const s = prompt("Enter String:");
 alert(firstWord(s));
